@@ -241,6 +241,50 @@
             color: #555;
         }
 
+        /* Sección QR */
+        .qr-section {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .qr-container {
+            display: inline-block;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            margin: 15px 0;
+        }
+
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            background: #25D366;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+            margin: 0 auto 15px;
+        }
+
+        .qr-text {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .qr-description {
+            color: #666;
+            font-size: 0.9rem;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
         /* Botón flotante de WhatsApp */
         .whatsapp-float {
             position: fixed;
@@ -471,6 +515,12 @@
             .gallery-grid {
                 grid-template-columns: 1fr;
             }
+
+            .qr-code {
+                width: 150px;
+                height: 150px;
+                font-size: 3rem;
+            }
         }
     </style>
 </head>
@@ -553,6 +603,20 @@
                         <div class="contact-detail">
                             <i class="fas fa-clock"></i>
                             <div class="address">Lunes a Sábado: 7:00 AM - 6:00 PM<br>Domingos: Cerrado</div>
+                        </div>
+                    </div>
+
+                    <!-- Sección QR -->
+                    <div class="qr-section">
+                        <h3 style="color: var(--primary); margin-bottom: 20px;">Escanea para contactarnos</h3>
+                        <div class="qr-container">
+                            <div class="qr-code">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="qr-text">WhatsApp Directo</div>
+                            <div class="qr-description">
+                                Escanea este código QR para iniciar una conversación por WhatsApp directamente
+                            </div>
                         </div>
                     </div>
                 </div>
