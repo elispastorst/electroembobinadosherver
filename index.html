@@ -606,17 +606,35 @@
                         </div>
                     </div>
 
-                    <!-- Sección QR -->
-                    <div class="qr-section">
-                        <h3 style="color: var(--primary); margin-bottom: 20px;">Escanea para contactarnos</h3>
-                        <div class="qr-container">
-                            <div class="qr-code">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="qr-text">WhatsApp Directo</div>
-                            <div class="qr-description">
-                                Escanea este código QR para iniciar una conversación por WhatsApp directamente
-                            </div>
+                   <section id="escaner" class="mb-8">
+            <div class="bg-white p-6 rounded-xl shadow text-center">
+                <h3 class="text-xl font-bold mb-4">Escanéame y Guárdanos</h3>
+                <p class="text-gray-600 mb-4">Escanea el QR para **abrir y guardar** la tarjeta digital de Acarreos y Viajes Elías.</p>
+                <a id="qrAnchor" href="https://acarreosyviajeselias.netlify.app/" target="_blank" rel="noopener">
+                    <!-- QR que lleva a la URL de la página -->
+                    <img id="qrImg" class="qr-img mx-auto"
+                        src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://acarreosyviajeselias.netlify.app/"
+                        alt="QR Acarreos y Viajes Elías (escanea para abrir)"
+                        title="Escanea para abrir la tarjeta digital">
+                </a>
+                <p class="mt-3 text-sm text-gray-500">Este QR es permanente.</p>
+            </div>
+        </section>
+
+        <section id="ganar-ingresos" class="mb-8">
+            <div class="bg-white p-6 rounded-xl shadow text-center">
+                <h3 class="text-xl font-bold mb-4">Generador de Ingresos</h3>
+                <p class="text-gray-600 mb-4">Si te interesa generar ingresos adicionales, puedes registrarte en Emprende World usando el siguiente enlace y QR.</p>
+                <div class="flex flex-col items-center gap-4">
+                    <!-- QR Emprende World (referido 16951247) -->
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://www.emprendeworld.com/websignup?ref=16951247" alt="QR Emprende World" class="qr-img shadow-lg" style="width:160px; max-width: 160px;">
+                    <a href="https://www.emprendeworld.com/websignup?ref=16951247" target="_blank" class="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition-all duration-300 transform hover:scale-105">
+                        <i class="fa-solid fa-hand-holding-dollar mr-2"></i> Regístrate en Emprende World
+                    </a>
+                </div>
+            </div>
+        </section>
+
                         </div>
                     </div>
                 </div>
@@ -763,4 +781,5 @@
         });
     </script>
 </body>
+
 </html>
